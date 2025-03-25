@@ -38,7 +38,7 @@ export default function HeroSection() {
       <audio ref={audioRef} loop className="hidden">
         <source src="/audio-background.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
-      </audio>
+      </audio> 
 
       {/* Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white">
