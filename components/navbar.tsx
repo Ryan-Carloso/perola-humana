@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import { Watermark } from "./ui/watermark"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,6 +18,7 @@ export default function Navbar() {
         <Link href="/" className="text-xl font-bold">
           Pérola Humana
         </Link>
+        <Watermark/>
 
         {/* Mobile menu button */}
         <button className="block md:hidden" onClick={toggleMenu}>

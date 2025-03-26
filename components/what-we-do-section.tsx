@@ -1,35 +1,97 @@
+import { Heart, Users, Activity, Shield } from "lucide-react"
+
 export default function WhatWeDoSection() {
   return (
-    <section id="fazemos" className="py-16">
+    <section id="fazemos" className="py-24 bg-gradient-to-b from-white to-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold">O Que Fazemos</h2>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-4xl font-bold text-primary mb-4">O Que Fazemos</h2>
+          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+        </div>
 
-        <div className="space-y-12">
-          <div>
-            <h3 className="mb-4 text-xl font-semibold">Objetivos - Orfanatos e Associações</h3>
-            <p className="text-gray-700">
-              {/* Replace with actual content when received */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed
-              erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-            </p>
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Objetivos */}
+          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+            <div className="mb-6 flex items-center">
+              <div className="mr-4 rounded-full bg-primary/15 p-4">
+                <Heart className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800">Objetivos</h3>
+            </div>
+            <div className="space-y-4 text-gray-700">
+              <p className="leading-relaxed">
+                O nosso objetivo é despertar a consciência humana a todos os níveis. Sensibilizar e apelar para a
+                atenção dos mais "INCONSCIENTES" e acima de tudo, doar amor e dedicação aos mais necessitados. (Crianças
+                e idosos).
+              </p>
+              <p className="leading-relaxed">
+                Amor, alegria, carinho, são gratuitos e é tão reconfortante saber se que podemos contribuir para mais
+                sorrisos. Apadrinhar crianças o ano todo e não só em natais, poder doar um pouco do nosso tempo de
+                alguma forma, visitar, surpreender e dizer, "Eu gosto muito de ti, ou, Eu te amo muito" é a maior
+                riqueza que alguém "esquecido" ou carenciado pode ouvir, seja criança ou idoso.
+              </p>
+              <p className="leading-relaxed">
+                Nas instituições, mesmo sendo muito bem cuidadas e amadas, na verdade não sabem o que é ter uma família,
+                uma mão protetora de um pai ou mãe. Desconhecem o mundo que os espera repleto de boas oportunidades e
+                que podem não ser alcançadas, porque simplesmente a estrutura emocional e mental não foi trabalhada em
+                criança e ficam à mercê dos acasos da vida, acreditando por falsas crenças que, "é porque tem que ser
+                assim".
+              </p>
+              <p className="leading-relaxed">
+                A mesma situação se aplica aos idosos que vivem completamente abandonados pelos filhos e/ou familiares.
+                Vivem isolados sem qualquer convívio social por falta de meios de locomoção, transporte e/ou condições
+                financeiras.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h3 className="mb-4 text-xl font-semibold">Projeto Rosa</h3>
-            <p className="text-gray-700">
-              {/* Replace with actual content when received */}
-              Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus
-              libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.
-            </p>
+          {/* Projeto Rosa */}
+          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+            <div className="mb-6 flex items-center">
+              <div className="mr-4 rounded-full bg-primary/15 p-4">
+                <Users className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800">Projeto Rosa</h3>
+            </div>
+            <div className="space-y-4 text-gray-700">
+              <p className="font-medium text-lg text-primary">ATL/CENTRO DE DIA PARA IDOSOS TOTALMENTE GRATUITO</p>
+              <div className="p-4 bg-gray-50 rounded-lg border border-gray-100 mt-4">
+                <p className="italic text-gray-600">Mais informações em breve</p>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 className="mb-4 text-xl font-semibold">Saúde - Tratamentos Gratuitos e Revolução Tecnológica</h3>
-            <p className="text-gray-700">
-              {/* Replace with actual content when received */}
-              Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a
-              ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
-            </p>
+          {/* Saúde */}
+          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+            <div className="mb-6 flex items-center">
+              <div className="mr-4 rounded-full bg-primary/15 p-4">
+                <Activity className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800">Saúde</h3>
+            </div>
+            <div className="space-y-4 text-gray-700">
+              <p className="font-medium text-lg text-primary">
+                Tratamento revolucionário na saúde totalmente gratuito.
+              </p>
+              <div className="p-4 bg-gray-50 rounded-lg border border-gray-100 mt-4">
+                <p className="italic text-gray-600">Em breve mais informações</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Apoio às Vítimas */}
+          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+            <div className="mb-6 flex items-center">
+              <div className="mr-4 rounded-full bg-primary/15 p-4">
+                <Shield className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800">Apoio às Vítimas de Violência Doméstica</h3>
+            </div>
+            <div className="space-y-4 text-gray-700">
+              <div className="p-4 bg-gray-50 rounded-lg border border-gray-100 mt-4">
+                <p className="italic text-gray-600">Em breve mais informações</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
