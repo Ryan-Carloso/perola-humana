@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
-  const [showConsent, setShowConsent] = useState(true)
+  const [showAudioPrompt, setShowAudioPrompt] = useState(true)
   const [audioEnabled, setAudioEnabled] = useState(false)
 
   useEffect(() => {
@@ -16,13 +16,13 @@ export default function HeroSection() {
       })
     }
     
-    // Always show consent popup when page loads
-    setShowConsent(true)
+    // Always show audio prompt when page loads
+    setShowAudioPrompt(true)
   }, [])
 
-  // Function to handle consent and enable audio
-  const handleAcceptConsent = () => {
-    setShowConsent(false)
+  // Function to handle enabling audio
+  const handleEnableAudio = () => {
+    setShowAudioPrompt(false)
     setAudioEnabled(true)
     
     // Play audio after user interaction
@@ -34,9 +34,9 @@ export default function HeroSection() {
     }
   }
 
-  const handleDeclineConsent = () => {
-    setShowConsent(false)
-    // Keep video muted if consent declined
+  const handleDeclineAudio = () => {
+    setShowAudioPrompt(false)
+    // Keep video muted if declined
   }
 
   return (
@@ -70,29 +70,26 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Cookie Consent Popup - Larger and more prominent */}
-      {showConsent && (
+      {/* Audio Permission Popup */}
+      {showAudioPrompt && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
           <div className="mx-4 max-w-2xl rounded-lg bg-white p-8 shadow-2xl">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">Permissão de Cookies e Áudio</h2>
-            <p className="mb-6 text-lg text-gray-700">
-              Este site utiliza cookies para melhorar sua experiência e também reproduz áudio de fundo.
-            </p>
+            <h2 className="mb-4 text-2xl font-bold text-gray-800">Ativar Áudio</h2>
             <p className="mb-8 text-lg text-gray-700">
-              Ao aceitar, você concorda com o uso de cookies e permite a reprodução de áudio.
+              Este site contém áudio de fundo. Deseja ativar o áudio?
             </p>
             <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
               <button
-                onClick={handleDeclineConsent}
+                onClick={handleDeclineAudio}
                 className="w-full rounded-lg bg-gray-300 px-6 py-3 text-lg font-medium text-gray-800 transition hover:bg-gray-400 sm:w-auto"
               >
-                Recusar
+                Não, obrigado
               </button>
               <button
-                onClick={handleAcceptConsent}
+                onClick={handleEnableAudio}
                 className="w-full rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white transition hover:bg-blue-700 sm:w-auto"
               >
-                Aceitar e Ativar Áudio
+                Sim, ativar áudio
               </button>
             </div>
           </div>
