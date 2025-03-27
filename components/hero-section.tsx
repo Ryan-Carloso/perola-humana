@@ -14,19 +14,19 @@ export default function HeroSection() {
       })
     }
 
-    // Auto-play audio when component mounts
-    if (audioRef.current) {
-      audioRef.current.volume = 0.3 // Set volume to 30%
-      audioRef.current.play().catch((error) => {
-        console.error("Audio autoplay failed:", error)
-      })
-    }
   }, [])
 
   return (
     <section id="inicio" className="relative h-screen w-full overflow-hidden">
       {/* Video background */}
-      <video ref={videoRef} className="absolute h-full w-full object-cover" autoPlay muted loop playsInline>
+      <video 
+        ref={videoRef} 
+        className="absolute h-full w-full object-cover" 
+        autoPlay 
+        loop 
+        playsInline
+        controls // Adding controls so users can manually adjust volume
+      >
         <source src="/background-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -34,11 +34,6 @@ export default function HeroSection() {
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Audio (hidden) */}
-      <audio ref={audioRef} loop className="hidden">
-        <source src="/audio-background.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio> 
 
       {/* Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white">
