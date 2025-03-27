@@ -5,7 +5,7 @@ export default function TechnologySection() {
         <h2 className="mb-6 text-center text-3xl font-bold">Tecnologia na Saúde</h2>
 
         <p className="mb-12 text-center text-xl">
-          "A grande revolução na saúde. Disponível totalmente gratuito para todos. Informações em breve."
+          A grande revolução na saúde. Disponível totalmente gratuito para todos. Informações em breve.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2">
