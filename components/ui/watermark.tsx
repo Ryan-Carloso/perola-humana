@@ -8,7 +8,6 @@ export const Watermark = () => {
         alt="Watermark"
         width={50}
         height={50}
-        className="opacity-50"
       />
     </div>
   );
