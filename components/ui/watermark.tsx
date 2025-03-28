@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Watermark = () => {
   return (
-    <div style={{ opacity: 0.5 }}>
+    <div >
       <Image
         src="/watermark.webp"
         alt="Watermark"

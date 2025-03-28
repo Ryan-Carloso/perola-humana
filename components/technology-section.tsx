@@ -11,30 +11,32 @@ export default function TechnologySection() {
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <div className="aspect-video overflow-hidden rounded-lg">
-              <iframe
+              <video
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/I5-aQyEDC4E"
+                src="/video 01.mp4"
+                poster="/thumb01.png"
                 title="Tecnologia na Saúde - Vídeo 1"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                controls
+                preload="metadata"
+                className="w-full h-full object-cover"
+              ></video>
             </div>
             <p className="mt-2 text-center text-gray-600">Vídeo 1: Inovações Tecnológicas</p>
           </div>
 
           <div>
             <div className="aspect-video overflow-hidden rounded-lg">
-              <iframe
+              <video
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/M-VMd2ci06E"
+                src="/video 02.mp4"
+                poster="/thumb02.png"
                 title="Tecnologia na Saúde - Vídeo 2"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                controls
+                preload="metadata"
+                className="w-full h-full object-cover"
+              ></video>
             </div>
             <p className="mt-2 text-center text-gray-600">Vídeo 2: Revolução na Saúde</p>
           </div>
