@@ -15,10 +15,14 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="text-xl font-bold">
-          Pérola Humana
-        </Link>
-        <Watermark/>
+      <div className="flex flex-row items-center space-x-10">
+  <Link href="/" className="text-xl font-bold">
+    Pérola Humana
+  </Link>
+  <Watermark />
+</div>
+
+        
 
         {/* Mobile menu button */}
         <button className="block md:hidden" onClick={toggleMenu}>
