@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { Mail, Phone } from "lucide-react"
+import emailjs from '@emailjs/browser'
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -13,24 +14,46 @@ export default function ContactSection() {
     subject: "",
     message: "",
   })
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your server
-    console.log("Form submitted:", formData)
-    alert("Mensagem enviada com sucesso!")
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    })
+    setLoading(true)
+
+    try {
+      await emailjs.send(
+        'service_79acxyg', // Replace with your EmailJS service ID
+        'template_kb2u5bp', // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          from_phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'formulario@perolahumana.org', // Replace with the recipient email
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      )
+
+      alert("Mensagem enviada com sucesso!")
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      })
+    } catch (error) {
+      console.error('Error sending email:', error)
+      alert("Erro ao enviar mensagem. Por favor, tente novamente.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -124,11 +147,13 @@ export default function ContactSection() {
             </div>
 
             <div className="text-center">
+              // Update the submit button to show loading state
               <button
                 type="submit"
-                className="rounded-md bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                disabled={loading}
+                className="rounded-md bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-blue-400"
               >
-                Enviar Mensagem
+                {loading ? "Enviando..." : "Enviar Mensagem"}
               </button>
             </div>
           </form>
