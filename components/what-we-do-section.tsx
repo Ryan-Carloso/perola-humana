@@ -45,6 +45,25 @@ export default function WhatWeDoSection() {
             </div>
           </div>
 
+          {/* DNA consulta */}
+          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+            <div className="mb-6 flex items-center">
+              <div className="mr-4 rounded-full bg-primary/15 p-4">
+                <Users className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800">CONSULTA DE ADN</h3>
+            </div>
+            <div className="space-y-4 text-gray-700">
+              <p className="leading-relaxed">A consulta de ADN (DNA) permite perceber a origem dos bloqueios, permite perceber quais as
+memórias nas suas células que impedem o sucesso, seja na saúde, família, profissional,
+financeira etc.</p>
+<p className="leading-relaxed">Com esta análise, é mais fácil saber qual o caminho a seguir, a forma de cura e/ou limpeza a
+ser feita, a postura perante a vida, as mudanças a serem feitas a nível de personalidade, afim
+de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área da sua vida</p>
+
+            </div>
+          </div>
+
           {/* Projeto Rosa */}
           <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
