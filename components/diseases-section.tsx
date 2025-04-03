@@ -126,23 +126,46 @@ export default function DiseasesSection() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {Object.entries(diseases).map(([letter, diseaseList]) => (
-            <div key={letter} className="rounded-lg bg-white p-4 shadow">
-              <h3 className="mb-2 text-xl font-bold text-blue-600">{letter}</h3>
-              <ul className="space-y-2">
-                {diseaseList.map((disease, index) => (
-                  <li key={index} className="text-gray-700">
-                    <div className="font-medium">{disease.name}</div>
-                    <div className="text-sm text-gray-600">{disease.description}</div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="max-w-5xl mx-auto mt-16">
+          <h3 className="text-3xl font-bold mb-10 text-center text-yellow-600">Lista de Doenças</h3>
+          
+          {Object.entries(diseases)
+            .filter(([_, list]) => list.length > 0)
+            .map(([letter, diseaseList], index) => {
+              const isEven = index % 2 === 0;
+              
+              return (
+                <div 
+                  key={letter} 
+                  className="mb-12 transform transition-all hover:scale-[1.01]"
+                >
+                  <div className="flex items-start relative">
+                    <div className="absolute left-0 top-0 bg-yellow-500 text-white font-bold rounded-full w-12 h-12 flex items-center justify-center shadow-lg z-10">
+                      {letter}
+                    </div>
+
+                    <div className={`flex w-full ${isEven ? "flex-row" : "flex-row-reverse"}`}>
+                      <div className={`w-20 text-yellow-500 font-bold text-3xl flex items-center justify-center opacity-20`}>
+                        {letter}
+                      </div>
+
+                      <div className={`flex-1 bg-white p-6 rounded-xl shadow-md border border-yellow-100 ${isEven ? "ml-8" : "mr-8"}`}>
+                        <ul className="space-y-4 divide-y divide-yellow-100">
+                          {diseaseList.map((disease, idx) => (
+                            <li key={idx} className={`${idx > 0 ? "pt-4" : ""} text-gray-700`}>
+                              <div className="font-medium text-lg text-yellow-700">{disease.name}</div>
+                              <div className="text-gray-600 mt-1">{disease.description}</div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
