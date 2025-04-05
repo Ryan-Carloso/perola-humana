@@ -98,12 +98,6 @@ export default function IntroductionSection() {
   
           <div className="bg-blue-50 p-6 rounded-lg my-6 shadow-md">
             <h3 className="text-xl font-bold mb-2 text-blue-700">PERDÃO O QUE É?</h3>
-            <p className="mb-4">
-              Perdoar verdadeiramente é uma questão de inteligência! O perdão é a forma de provar a si mesmo que as suas
-              emoções negativas estão debaixo do seu controle e que conhece o seu próprio potencial para conquistar novos
-              caminhos e realidades.
-            </p>
-  
             <p>
               O perdão é um ato profundo de libertação e de inteligência. É um processo interno que dissolve
               ressentimentos, mágoas e dores que prendem a mente e o coração a situações do passado. Perdoar não é um
