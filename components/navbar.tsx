@@ -44,7 +44,7 @@ export default function Navbar() {
             Doenças
           </Link>
           <Link href="/tecnologia" className="text-gray-700 hover:text-blue-600">
-            Tecnologia
+            Saude
           </Link>
           <Link href="/autoconhecimento" className="text-gray-700 hover:text-blue-600">
             Autoconhecimento
@@ -72,7 +72,7 @@ export default function Navbar() {
               Doenças
             </Link>
             <Link href="/tecnologia" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
-              Tecnologia
+              Saude
             </Link>
             <Link href="/autoconhecimento" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
               Autoconhecimento
