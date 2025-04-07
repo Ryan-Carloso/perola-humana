@@ -1,13 +1,18 @@
 import Image from "next/image";
 
-export const Watermark = () => {
+interface WatermarkProps {
+  width?: number;
+  height?: number;
+}
+
+export const Watermark = ({ width = 100, height = 100 }: WatermarkProps) => {
   return (
-    <div >
+    <div>
       <Image
         src="/watermark.webp"
         alt="Watermark"
-        width={100}
-        height={100}
+        width={width}
+        height={height}
       />
     </div>
   );
