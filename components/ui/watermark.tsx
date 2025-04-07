@@ -9,7 +9,7 @@ export const Watermark = ({ width = 100, height = 100 }: WatermarkProps) => {
   return (
     <div>
       <Image
-        src="/watermark.webp"
+        src="/watermark.png"
         alt="Watermark"
         width={width}
         height={height}

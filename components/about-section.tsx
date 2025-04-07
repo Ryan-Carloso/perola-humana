@@ -9,10 +9,13 @@ export default function AboutSection() {
         </div>
       </div>
       <div className="container mx-auto px-6 max-w-6xl relative z-[1]">
-        <h2 className="mb-16 text-center text-4xl font-bold text-gray-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:mx-auto after:mt-4">
+        <h2 className="mb-4 text-center text-4xl font-bold text-gray-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:mx-auto after:mt-4">
           Sobre Nós
-        </h2>
 
+        </h2>
+        <div className="flex justify-center items-center mb-10" >
+          <Watermark width={200} height={200} />
+          </div>
         {/* Remove the second watermark div that was here */}
         
         <div className="grid gap-12 md:grid-cols-2">
