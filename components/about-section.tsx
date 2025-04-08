@@ -5,7 +5,10 @@ export default function AboutSection() {
     <section
       id="sobre"
       className="py-20 relative min-h-screen overflow-hidden"
+      style={{
+        background: "radial-gradient(circle at center, #fce6b8 0%, #fccc8a 40%, #fca94d 70%, #f18b01 100%)"
 
+      }}
           >
       <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
         <div className="w-full max-w-4xl h-full max-h-[80vh]">
@@ -18,7 +21,7 @@ export default function AboutSection() {
         </h2>
 
         <div className="grid gap-12 md:grid-cols-2">
-          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white/40 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               A Nossa História
             </h3>
