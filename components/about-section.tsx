@@ -6,7 +6,6 @@ export default function AboutSection() {
       id="sobre"
       className="py-20 relative min-h-screen overflow-hidden"
       style={{
-        background: "radial-gradient(circle at center, #fce6b8 0%, #fccc8a 40%, #fca94d 70%, #f18b01 100%)"
 
       }}
           >
