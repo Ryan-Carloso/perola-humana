@@ -12,7 +12,7 @@ export const Watermark = ({ width = 100, height = 100, className = "", opacity =
     <div className={`w-full h-full ${className}`} style={{ opacity }}>
       <div className="relative w-full h-full">
         <Image
-          src="/1watermark.png"
+          src="/watermark.png"
           alt="Watermark"
           fill
           sizes="100vw"

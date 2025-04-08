@@ -4,13 +4,13 @@ export default function AboutSection() {
   return (
     <section
       id="sobre"
-      className="py-20 relative min-h-screen overflow-hidden "
+      className="py-20 relative min-h-screen overflow-hidden"
       style={{
-        background: "radial-gradient(circle at center, rgba(241, 176, 35, 0.7) 0%, rgba(254, 128, 0, 0.7) 40%, rgba(254, 128, 0, 0.7) 70%, rgba(229, 137, 0, 0.7) 100%)"
+        background: "radial-gradient(circle at center, #f1b023 0%, #fe8000 40%, #fe8000 70%, #e58900 100%)"
       }}
           >
       <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-        <div className="w-full max-w-4xl h-full max-h-[80vh] ">
+        <div className="w-full max-w-4xl h-full max-h-[80vh]">
           <Watermark />
         </div>
       </div>
