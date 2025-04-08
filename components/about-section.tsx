@@ -5,9 +5,7 @@ export default function AboutSection() {
     <section
       id="sobre"
       className="py-20 relative min-h-screen overflow-hidden"
-      style={{
-        background: "radial-gradient(circle at center, #f1b023 0%, #fe8000 40%, #fe8000 70%, #e58900 100%)"
-      }}
+
           >
       <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
         <div className="w-full max-w-4xl h-full max-h-[80vh]">
@@ -20,11 +18,11 @@ export default function AboutSection() {
         </h2>
 
         <div className="grid gap-12 md:grid-cols-2">
-          <div className="bg-black/10 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="mb-6 text-2xl font-semibold text-gray-100 border-b pb-3 border-gray-200">
+          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               A Nossa História
             </h3>
-            <div className="text-gray-100 space-y-4 text-sm md:text-base">
+            <div className="text-gray-800 space-y-4 text-sm md:text-base">
               <p>
                 HELENA DA FONSECA, realizou os primeiros movimentos humanitários em 2007 com atividades e serviços
                 humanitários.
@@ -83,12 +81,12 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="bg-black/10 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="mb-6 text-2xl font-semibold text-gray-100 border-b pb-3 border-gray-200">
+          <div className="bg-white/40 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               Porquê o Nome Pérola Humana
             </h3>
 
-            <div className="text-gray-100 space-y-4 text-sm md:text-base">
+            <div className="text-gray-800 space-y-4 text-sm md:text-base">
               <p>
                 O arquétipo da pérola com a concha representa a proteção, preciosidade e crescimento interior. Esse
                 arquétipo pode ser associado a diferentes áreas da vida, incluindo a personalidade, o desenvolvimento
@@ -97,7 +95,7 @@ export default function AboutSection() {
 
               <div className="mt-4 space-y-3">
                 <div>
-                  <h4 className="font-medium text-gray-100 mb-1">Desenvolvimento Interior:</h4>
+                  <h4 className="font-medium text-gray-800 mb-1">Desenvolvimento Interior:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     As pérolas formam-se a partir de uma pequena impureza que, com o tempo se transforma em algo
                     valioso. Esse processo pode ser visto como uma metáfora para o desenvolvimento interior, mostrando
@@ -106,7 +104,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-gray-100 mb-1">Resiliência:</h4>
+                  <h4 className="font-medium text-gray-800 mb-1">Resiliência:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A formação da pérola é um processo lento e resiliente, portanto esse arquétipo pode inspirar-nos a
                     termos paciência e persistência, mostrando que o crescimento e o desenvolvimento pessoal levam
@@ -115,7 +113,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-gray-100 mb-1">Autovalorização:</h4>
+                  <h4 className="font-medium text-gray-800 mb-1">Autovalorização:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A pérola é algo raro e significativo, o que reforça o conceito de autovalorização e autoamor.
                     Aqueles que se identificam com esse arquétipo podem sentir a necessidade de considerar a sua própria
@@ -124,7 +122,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-gray-100 mb-1">Cuidado e Nutrição:</h4>
+                  <h4 className="font-medium text-gray-800 mb-1">Cuidado e Nutrição:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A concha, além de proteger, também nutre as pérolas, fornece o ambiente necessário para o seu
                     desenvolvimento. Esse arquétipo pode refletir a importância de cuidar de si mesmo e dos outros,
