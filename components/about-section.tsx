@@ -2,28 +2,29 @@ import { Watermark } from "./ui/watermark"
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
-      <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <Watermark width={3000} height={3000} />
+    <section
+      id="sobre"
+      className="py-20 relative min-h-screen overflow-hidden "
+      style={{
+        background: "radial-gradient(circle at center, rgba(241, 176, 35, 0.7) 0%, rgba(254, 128, 0, 0.7) 40%, rgba(254, 128, 0, 0.7) 70%, rgba(229, 137, 0, 0.7) 100%)"
+      }}
+          >
+      <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+        <div className="w-full max-w-4xl h-full max-h-[80vh] ">
+          <Watermark />
         </div>
       </div>
       <div className="container mx-auto px-6 max-w-6xl relative z-[1]">
-        <h2 className="mb-4 text-center text-4xl font-bold text-gray-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:mx-auto after:mt-4">
+        <h2 className="mb-4 text-center text-4xl font-bold text-white relative after:content-[''] after:block after:w-24 after:h-1 after:bg-white after:mx-auto after:mt-4">
           Sobre Nós
-
         </h2>
-        <div className="flex justify-center items-center mb-10" >
-          <Watermark width={200} height={200} />
-          </div>
-        {/* Remove the second watermark div that was here */}
-        
+
         <div className="grid gap-12 md:grid-cols-2">
-          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-200">
+          <div className="bg-black/10 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="mb-6 text-2xl font-semibold text-gray-100 border-b pb-3 border-gray-200">
               A Nossa História
             </h3>
-            <div className="text-gray-700 space-y-4 text-sm md:text-base">
+            <div className="text-gray-100 space-y-4 text-sm md:text-base">
               <p>
                 HELENA DA FONSECA, realizou os primeiros movimentos humanitários em 2007 com atividades e serviços
                 humanitários.
@@ -82,12 +83,12 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-200">
+          <div className="bg-black/10 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="mb-6 text-2xl font-semibold text-gray-100 border-b pb-3 border-gray-200">
               Porquê o Nome Pérola Humana
             </h3>
 
-            <div className="text-gray-700 space-y-4 text-sm md:text-base">
+            <div className="text-gray-100 space-y-4 text-sm md:text-base">
               <p>
                 O arquétipo da pérola com a concha representa a proteção, preciosidade e crescimento interior. Esse
                 arquétipo pode ser associado a diferentes áreas da vida, incluindo a personalidade, o desenvolvimento
@@ -96,7 +97,7 @@ export default function AboutSection() {
 
               <div className="mt-4 space-y-3">
                 <div>
-                  <h4 className="font-medium text-blue-600 mb-1">Desenvolvimento Interior:</h4>
+                  <h4 className="font-medium text-gray-100 mb-1">Desenvolvimento Interior:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     As pérolas formam-se a partir de uma pequena impureza que, com o tempo se transforma em algo
                     valioso. Esse processo pode ser visto como uma metáfora para o desenvolvimento interior, mostrando
@@ -105,7 +106,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-blue-600 mb-1">Resiliência:</h4>
+                  <h4 className="font-medium text-gray-100 mb-1">Resiliência:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A formação da pérola é um processo lento e resiliente, portanto esse arquétipo pode inspirar-nos a
                     termos paciência e persistência, mostrando que o crescimento e o desenvolvimento pessoal levam
@@ -114,7 +115,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-blue-600 mb-1">Autovalorização:</h4>
+                  <h4 className="font-medium text-gray-100 mb-1">Autovalorização:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A pérola é algo raro e significativo, o que reforça o conceito de autovalorização e autoamor.
                     Aqueles que se identificam com esse arquétipo podem sentir a necessidade de considerar a sua própria
@@ -123,7 +124,7 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-blue-600 mb-1">Cuidado e Nutrição:</h4>
+                  <h4 className="font-medium text-gray-100 mb-1">Cuidado e Nutrição:</h4>
                   <p className="text-sm md:text-base pl-2 border-l-2 border-blue-200">
                     A concha, além de proteger, também nutre as pérolas, fornece o ambiente necessário para o seu
                     desenvolvimento. Esse arquétipo pode refletir a importância de cuidar de si mesmo e dos outros,
@@ -138,4 +139,3 @@ export default function AboutSection() {
     </section>
   )
 }
-
