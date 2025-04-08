@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { Watermark } from "./ui/watermark"
+import { Watermark } from "./ui/nav/navwatermark"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

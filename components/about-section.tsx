@@ -1,25 +1,30 @@
 import { Watermark } from "./ui/watermark"
+import { Watermark as NavWatermark } from "./ui/nav/navwatermark"
+
+
+const Fullscreen = typeof window !== "undefined" ? {
+  width: window.innerWidth,
+  height: window.innerHeight
+} : { width: 5000, height: 3000 };
+
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
-      <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <Watermark width={3000} height={3000} />
-        </div>
+    <section id="sobre" className="py-20 bg-gradient-to-b from-gray-50 to-white relative min-h-screen overflow-hidden">
+      <div className="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+        <Watermark width={1920} height={1080} />
       </div>
       <div className="container mx-auto px-6 max-w-6xl relative z-[1]">
         <h2 className="mb-4 text-center text-4xl font-bold text-gray-800 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-blue-500 after:mx-auto after:mt-4">
           Sobre Nós
-
         </h2>
         <div className="flex justify-center items-center mb-10" >
-          <Watermark width={200} height={200} />
+          <NavWatermark width={200} height={200} />
           </div>
         {/* Remove the second watermark div that was here */}
         
         <div className="grid gap-12 md:grid-cols-2">
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-200">
               A Nossa História
             </h3>
@@ -82,7 +87,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-200">
               Porquê o Nome Pérola Humana
             </h3>
