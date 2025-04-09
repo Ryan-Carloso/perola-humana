@@ -3,8 +3,9 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone } from "lucide-react"
-import emailjs from '@emailjs/browser'
+import { Mail } from "lucide-react"
+
+const RECIPIENT_EMAIL = 'formulario@perolahumana.org'
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -21,39 +22,26 @@ export default function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setLoading(true)
+    
+    const mailtoLink = `mailto:${RECIPIENT_EMAIL}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Nome: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Telefone: ${formData.phone}\n\n` +
+      `Mensagem:\n${formData.message}`
+    )}`
 
-    try {
-      await emailjs.send(
-        'service_79acxyg', // Replace with your EmailJS service ID
-        'template_kb2u5bp', // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          from_phone: formData.phone,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: 'formulario@perolahumana.org', // Replace with the recipient email
-        },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      )
-
-      alert("Mensagem enviada com sucesso!")
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      })
-    } catch (error) {
-      console.error('Error sending email:', error)
-      alert("Erro ao enviar mensagem. Por favor, tente novamente.")
-    } finally {
-      setLoading(false)
-    }
+    window.location.href = mailtoLink
+    
+    // Reset form after opening mail client
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
   }
 
   return (
