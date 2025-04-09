@@ -1,6 +1,14 @@
+import { Watermark } from "./ui/watermark"
+
+
 export default function TechnologySection() {
   return (
     <section id="tecnologia" className="py-16">
+        <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+  <div className="w-full max-w-4xl h-full max-h-[40vh]">
+  <Watermark />
+    </div>
+  </div>
       <div className="container mx-auto px-4">
         <h2 className="mb-6 text-center text-3xl font-bold">Tecnologia na Saúde</h2>
 

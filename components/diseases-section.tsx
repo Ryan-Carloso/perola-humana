@@ -2,12 +2,25 @@
 
 import IntroductionSection from "./sub-components/introduction-section"
 import DiseasesList from "./sub-components/diseases-list"
+import { Watermark } from "./ui/watermark"
+
 
 export default function DiseasesSection() {
   return (
-    <section id="doencas" className="py-16 bg-gray-50">
+    <section id="doencas" className="relative py-24 bg-gradient-to-b from-white to-gray-100">
+  <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+  <div className="w-full max-w-4xl h-full max-h-[80vh]">
+  <Watermark />
+    </div>
+  </div>
+        <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+  <div className="w-full max-w-4xl h-full max-h-[80vh]">
+  <Watermark />
+    </div>
+  </div>
       <div className="container mx-auto px-4">
         <h2 className="mb-6 text-center text-3xl font-bold">Doenças Porquê?</h2>
+
         <IntroductionSection />
         <DiseasesList />
       </div>

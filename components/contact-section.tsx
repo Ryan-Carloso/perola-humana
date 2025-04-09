@@ -147,7 +147,6 @@ export default function ContactSection() {
             </div>
 
             <div className="text-center">
-              // Update the submit button to show loading state
               <button
                 type="submit"
                 disabled={loading}
