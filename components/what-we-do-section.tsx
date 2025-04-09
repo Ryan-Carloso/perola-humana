@@ -1,8 +1,14 @@
 import { Heart, Users, Activity, Shield } from "lucide-react"
+import { Watermark } from "./ui/watermark"
 
 export default function WhatWeDoSection() {
   return (
     <section id="fazemos" className="py-24 bg-gradient-to-b from-white to-gray-100">
+            <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+        <div className="w-full max-w-4xl h-full max-h-[80vh]">
+          <Watermark />
+        </div>
+      </div>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4">O Que Fazemos</h2>
@@ -11,7 +17,7 @@ export default function WhatWeDoSection() {
 
         <div className="grid gap-8 md:grid-cols-2">
           {/* Objetivos */}
-          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Heart className="h-7 w-7 text-primary" />
@@ -46,7 +52,7 @@ export default function WhatWeDoSection() {
           </div>
 
           {/* DNA consulta */}
-          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Users className="h-7 w-7 text-primary" />
@@ -65,7 +71,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Projeto Rosa */}
-          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Users className="h-7 w-7 text-primary" />
@@ -81,7 +87,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Saúde */}
-          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Activity className="h-7 w-7 text-primary" />
@@ -99,7 +105,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Apoio às Vítimas */}
-          <div className="rounded-xl bg-white p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Shield className="h-7 w-7 text-primary" />
