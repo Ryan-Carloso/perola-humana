@@ -83,7 +83,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="bg-white/40 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               Porquê o Nome Pérola Humana
             </h3>
