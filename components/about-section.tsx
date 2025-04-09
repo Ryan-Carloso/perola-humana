@@ -15,12 +15,12 @@ export default function AboutSection() {
         </div>
       </div>
       <div className="container mx-auto px-6 max-w-6xl relative z-[1]">
-        <h2 className="mb-4 text-center text-4xl font-bold text-white relative after:content-[''] after:block after:w-24 after:h-1 after:bg-white after:mx-auto after:mt-4">
+        <h2 className="mb-4 text-gray-800 text-center text-4xl font-bold relative after:content-[''] after:block after:w-24 after:h-1 after:bg-white after:mx-auto after:mt-4">
           Sobre Nós
         </h2>
 
         <div className="grid gap-12 md:grid-cols-2">
-          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className=" p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               A Nossa História
             </h3>
@@ -83,7 +83,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className=" p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className=" p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <h3 className="mb-6 text-2xl font-semibold text-gray-800 border-b pb-3 border-gray-800">
               Porquê o Nome Pérola Humana
             </h3>
