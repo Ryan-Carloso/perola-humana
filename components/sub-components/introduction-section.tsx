@@ -152,7 +152,7 @@ corpo fique livre dessas psicossomatizações, é essencial praticar uma auto-re
 reajustar a nossa harmonia interior. Isso exige compreender a origem dos conflitos que tivemos
 com os outros e reconciliarmo-nos com nós mesmos, mesmo que aqueles que “hostilizamos” já
 não estejam neste plano.
-          <p/>
+</p>
           
           <p>
           A consciência tranquila é a chave para transformar não apenas a nossa saúde, mas também
@@ -162,13 +162,13 @@ outra situação que nos fez somatizar um desequilíbrio energético no nosso co
 cabeça, o tronco os membros e cada órgão interno, recebem um impulso nervoso do cérebro,
 que é comandado pelas emoções e, com confiança e desprendimento, podemos libertar a
 nossa mente de traumas e ressentimentos. Compreenda-se e liberte-se!
-          <p/>
+</p>
 
           <p>
           A energia do amor depende da energia que emanamos (repelimos ou atraímos). Se não nos
 libertarmos das emoções negativas, a nossa vida fica presa num círculo vicioso, criando
 doenças, acidentes e insucessos. A solução é simples, mas poderosa: Perdoe!
-          <p/>
+</p>
 
   
           <div className="bg-blue-50 p-6 rounded-lg my-6 shadow-md">
