@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { Watermark } from "./ui/watermark"
 
 import { useState } from "react"
 import { Mail } from "lucide-react"
@@ -46,6 +47,11 @@ export default function ContactSection() {
 
   return (
     <section id="contacto" className="py-16">
+        <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+  <div className="w-full max-w-4xl h-full max-h-[30vh]">
+  <Watermark />
+    </div>
+  </div>
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-3xl font-bold">Fale Connosco</h2>
 

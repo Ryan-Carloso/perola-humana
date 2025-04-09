@@ -10,7 +10,7 @@ export default function AboutSection() {
       }}
           >
       <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-        <div className="w-full max-w-4xl h-full max-h-[80vh]">
+        <div className="w-full max-w-4xl h-full max-h-[40vh]">
           <Watermark />
         </div>
       </div>

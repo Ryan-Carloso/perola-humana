@@ -5,7 +5,7 @@ export default function WhatWeDoSection() {
   return (
 <section id="fazemos" className="relative py-24 bg-gradient-to-b from-white to-gray-100">
   <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-  <div className="w-full max-w-4xl h-full max-h-[80vh]">
+  <div className="w-full max-w-4xl h-full max-h-[40vh]">
   <Watermark />
     </div>
   </div>

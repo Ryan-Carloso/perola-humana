@@ -5,7 +5,7 @@ export default function TechnologySection() {
   return (
     <section id="tecnologia" className="py-16">
         <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-  <div className="w-full max-w-4xl h-full max-h-[40vh]">
+  <div className="w-full max-w-4xl h-full max-h-[30vh]">
   <Watermark />
     </div>
   </div>
