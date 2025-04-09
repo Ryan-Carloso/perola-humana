@@ -3,17 +3,18 @@ import { Watermark } from "./ui/watermark"
 
 export default function WhatWeDoSection() {
   return (
-    <section id="fazemos" className="py-24 bg-gradient-to-b from-white to-gray-100">
-            <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-        <div className="w-full max-w-4xl h-full max-h-[80vh]">
-          <Watermark />
-        </div>
-      </div>
+<section id="fazemos" className="relative py-24 bg-gradient-to-b from-white to-gray-100">
+  <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+  <div className="w-full max-w-4xl h-full max-h-[80vh]">
+  <Watermark />
+    </div>
+  </div>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4">O Que Fazemos</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
         </div>
+        
 
         <div className="grid gap-8 md:grid-cols-2">
           {/* Objetivos */}
