@@ -174,10 +174,8 @@ doenças, acidentes e insucessos. A solução é simples, mas poderosa: Perdoe!
           <div className="bg-blue-50 p-6 rounded-lg my-6 shadow-md">
             <h3 className="text-xl font-bold mb-2 text-blue-700">PERDÃO O QUE É?</h3>
             <p>
-              O perdão é um ato profundo de libertação e de inteligência. É um processo interno que dissolve
-              ressentimentos, mágoas e dores que prendem a mente e o coração a situações do passado. Perdoar não é um
-              favor que fazemos ao outro, mas um presente que damos a nós mesmos. O perdão nos permite soltar esse fardo e
-              seguir em frente, com leveza e serenidade. O perdão é libertação.
+            Perdoar verdadeiramente é uma questão de inteligência! 
+            É um processo interno que dissolve ressentimentos, mágoas e dores que prendem a mente e o coração a situações do passado, é a forma de provar a si mesmo que as suas emoções negativas estão sob o seu controle e que conhece o seu próprio potencial para conquistar novos caminhos e realidades. Perdoar é um ato de amor-próprio. É uma escolha consciente de deixar o passado no passado e viver plenamente o presente. Então, perdoe, não pelo outro, mas por si, liberte-se de fardos! Perdoe !
             </p>
   
             <p>
