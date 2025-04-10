@@ -1,6 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Navbar from "@/components/navbar"
+
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -40,7 +42,9 @@ export default function HeroSection() {
   }
 
   return (
+    
     <section id="inicio" className="relative h-screen w-full overflow-hidden">
+      <Navbar />
       {/* Video background */}
       <video 
         ref={videoRef} 

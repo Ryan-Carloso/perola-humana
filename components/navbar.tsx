@@ -4,6 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Watermark } from "./ui/nav/navwatermark"
+import Image from "next/image";
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,12 +15,16 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+    <header className="sticky top-0 z-50 w-full bg-white bg-opacity-30 shadow-sm">
+      <div className="container mx-auto flex h-30 items-center justify-between px-4">
       <div className="flex flex-row items-center space-x-10">
-  <Link href="/" className="text-xl font-bold">
-    Pérola Humana
-  </Link>
+      <Image
+        src="/perolahumana.png"
+        alt="Watermark"
+        width={200}
+        height={200}
+        className="mb-4"
+      />
   <Watermark />
 </div>
 

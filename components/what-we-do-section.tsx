@@ -18,7 +18,7 @@ export default function WhatWeDoSection() {
 
         <div className="grid gap-8 md:grid-cols-2">
           {/* Objetivos */}
-          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Heart className="h-7 w-7 text-primary" />
