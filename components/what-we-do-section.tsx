@@ -53,7 +53,7 @@ export default function WhatWeDoSection() {
           </div>
 
           {/* DNA consulta */}
-          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8  hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Users className="h-7 w-7 text-primary" />
@@ -72,7 +72,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Projeto Rosa */}
-          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8  hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Users className="h-7 w-7 text-primary" />
@@ -88,7 +88,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Saúde */}
-          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8  hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Activity className="h-7 w-7 text-primary" />
@@ -106,7 +106,7 @@ de, passo a passo re-criar a sua vida e obter o sucesso pleno em qualquer área 
           </div>
 
           {/* Apoio às Vítimas */}
-          <div className="rounded-xl p-8 shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:translate-y-[-5px]">
+          <div className="rounded-xl p-8  hover:shadow-xl hover:translate-y-[-5px]">
             <div className="mb-6 flex items-center">
               <div className="mr-4 rounded-full bg-primary/15 p-4">
                 <Shield className="h-7 w-7 text-primary" />

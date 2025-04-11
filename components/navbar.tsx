@@ -15,7 +15,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white bg-opacity-30 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white bg-opacity-80 shadow-sm">
       <div className="container mx-auto flex h-30 items-center justify-between px-4">
       <div className="flex flex-row items-center space-x-10">
       <Image
