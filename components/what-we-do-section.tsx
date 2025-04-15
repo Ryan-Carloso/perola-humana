@@ -1,4 +1,6 @@
 import { Heart, Users, Activity, Shield } from "lucide-react"
+import { Watermark } from "./ui/watermark"
+
 
 export default function WhatWeDoAlternating() {
   return (
@@ -47,13 +49,21 @@ export default function WhatWeDoAlternating() {
           <div className="order-2 md:order-1 pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all ">
             <div className="max-w-md space-y-4 text-gray-700">
               <p className="leading-relaxed">
-                A consulta de ADN (DNA) permite perceber a origem dos bloqueios, permite perceber quais as memórias nas
-                suas células que impedem o sucesso, seja na saúde, família, profissional, financeira etc.
+                Visa analisar todos os registos contidos no ADN energético, como:
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mb-4">
+                <li>Memórias de vidas passadas</li>
+                <li>Heranças genéticas e de antepassados</li>
+                <li>Origens de fobias, traumas etc.</li>
+              </ul>
+              <p className="leading-relaxed">
+                Todas estas memórias originam personalidades inconscientes e/ou impercetíveis no ser humano originando bloqueios, padrões, dores e perdas.
               </p>
               <p className="leading-relaxed">
-                Com esta análise, é mais fácil saber qual o caminho a seguir, a forma de cura e/ou limpeza a ser feita,
-                a postura perante a vida, as mudanças a serem feitas a nível de personalidade, afim de, passo a passo
-                re-criar a sua vida e obter o sucesso pleno em qualquer área da sua vida
+                Com esta análise, torna-se mais fácil saber qual o caminho a seguir, a forma de cura. Tomando consciência, há uma aceitação, aceitando, a cura acontece.
+              </p>
+              <p className="leading-relaxed">
+                Apenas a tomada de consciência/mudança interna pode realizar os tais "milagres". E estes milagres não são de ordem religiosa, são apenas a mudança da nossa consciência que atua para uma nova realidade.
               </p>
             </div>
           </div>
