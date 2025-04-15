@@ -37,14 +37,14 @@ export default function AboutSection() {
                 ADN.
               </p>
               <p>
-              Consulta de ADN- Na pagina  O QUE FAZEMOS
-Visa analisar todos os registos contidos no ADN energético, como:
-•⁠  ⁠Memórias de vidas passadas
-•⁠  ⁠Heranças genéticas e de antepassados
-•⁠  ⁠Origens de fobias, traumas etc.
-Todas estas memórias originam personalidades inconscientes e/ou impercetíveis no ser humano originando bloqueios, padrões, dores e perdas. 
-Com esta análise, torna-se mais fácil saber qual o caminho a seguir, a forma de cura. Tomando consciência, há uma aceitação, aceitando, a cura acontece. Apenas a tomada de consciência /mudança de interna pode realizar os tais “milagres”.  E estes milagres não são de ordem religiosa, são apenas a mudança da nossa consciência que atua para uma nova realidade.
+                As consultas de ADN, são da sua autoria e visa analisar todos os registos contidos no ADN energético,
+                como:
               </p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Memórias de vidas passadas</li>
+                <li>Heranças genéticas e de antepassados</li>
+                <li>Origens de fobias, traumas etc.</li>
+              </ul>
             </div>
           </div>
         </div>
