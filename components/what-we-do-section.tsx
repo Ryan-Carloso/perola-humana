@@ -5,6 +5,11 @@ import { Watermark } from "./ui/watermark"
 export default function WhatWeDoAlternating() {
   return (
     <section id="fazemos" className="bg-gradient-to-b from-white to-gray-100 relative">
+            <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
+        <div className="w-full max-w-4xl h-full max-h-[40vh]">
+          <Watermark />
+        </div>
+      </div>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center py-16">
           <h2 className="text-4xl font-bold text-primary mb-4">O Que Fazemos</h2>
@@ -27,7 +32,7 @@ export default function WhatWeDoAlternating() {
             </div>
           </div>
 
-          <div className="pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all ">
+          <div className="pl-8 rounded-xl p-8 ">
             <div className="max-w-s space-y-4 text-gray-700">
               <p className="leading-relaxed">
                 O nosso objetivo é despertar a consciência humana a todos os níveis. Sensibilizar e apelar para a
@@ -46,7 +51,7 @@ export default function WhatWeDoAlternating() {
 
         {/* DNA consulta - Título à direita, texto à esquerda */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 gap-8  ">
-          <div className="order-2 md:order-1 pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all ">
+          <div className="order-2 md:order-1 pl-8 rounded-xl p-8 ">
             <div className="max-w-md space-y-4 text-gray-700">
               <p className="leading-relaxed">
                 Visa analisar todos os registos contidos no ADN energético, como:
@@ -93,7 +98,7 @@ export default function WhatWeDoAlternating() {
             </div>
           </div>
 
-          <div className="pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all ">
+          <div className="pl-8 rounded-xl p-8 ">
             <div className="max-w-s space-y-4 text-gray-700">
               <p className="font-medium text-lg text-primary">ATL/CENTRO DE DIA PARA IDOSOS TOTALMENTE GRATUITO</p>
               <div className="p-4 bg-gray-50 rounded-lg border border-gray-100 mt-4">
@@ -105,7 +110,7 @@ export default function WhatWeDoAlternating() {
 
         {/* Saúde - Título à direita, texto à esquerda */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="order-2 md:order-1 pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all">
+          <div className="order-2 md:order-1 pl-8 rounded-xl ">
             <div className="max-w-md space-y-4 text-gray-700  ">
               <p className="font-medium text-lg text-primary">
                 Tratamento revolucionário na saúde totalmente gratuito.
@@ -141,7 +146,7 @@ export default function WhatWeDoAlternating() {
             </div>
           </div>
 
-          <div className="pl-8 rounded-xl p-8 shadow-lg border border-gray-100 transition-all ">
+          <div className="pl-8 rounded-xl p-8 ">
             <div className="max-w-s space-y-4 text-gray-700">
               <p className="font-medium text-lg text-primary">Apoio às Vítimas de Violência Doméstica</p>
               <div className="p-4 bg-gray-50 rounded-lg border border-gray-100 mt-4">
