@@ -48,7 +48,7 @@ export default function AboutSection() {
               <p className="leading-relaxed font-medium">
                 Com muita determinação, nunca abandonou o sonho de ajudar quem mais precisa e hoje tem a feliz satisfação de poder colocar em prática o seu desejo.
               </p>
-              <div className="mt-4 bg-gray-50 p-3 rounded-md flex items-center">
+              <div className="mt-4 bg-blue-50 p-3 rounded-md flex items-center">
                 <div className="w-2 h-12 bg-blue-400 mr-3"></div>
                 <p className="text-gray-800">
                   Além de Diplomata Civil, Helena da Fonseca também comparticipa em 250 projetos humanitários internacionalmente.
