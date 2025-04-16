@@ -113,6 +113,48 @@ export default function AboutSection() {
           </div>
         </div>
 
+                {/* A Nossa História - Title on left, content on right */}
+                <div className="py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex items-center justify-center md:justify-end pr-8">
+            <div className="max-w-md">
+              <div className="flex items-center justify-end mb-6">
+                <h3 className="text-2xl font-semibold text-gray-800">O seu percurso</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="pl-8">
+            <div className="max-w-md space-y-4 text-gray-700 bg-blue-50 p-6 rounded-lg shadow-sm">
+              
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-2 h-10 bg-blue-400 mr-3 rounded-full"></div>
+                  <div>
+                    <span className="font-medium block">Portugal</span>
+                    <span className="text-gray-600">Lisboa e Porto</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-2 h-10 bg-blue-400 mr-3 rounded-full"></div>
+                  <div>
+                    <span className="font-medium block">Brasil</span>
+                    <span className="text-gray-600">Rio de Janeiro, São Paulo, Rio Grande do Sul, Santa Catarina</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-2 h-10 bg-blue-400 mr-3 rounded-full"></div>
+                  <div>
+                    <span className="font-medium block">Japão</span>
+                    <span className="text-gray-600">Tóquio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
               </div>
     </section>
   )
