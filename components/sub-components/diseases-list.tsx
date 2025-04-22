@@ -5,10 +5,21 @@ import { ChevronDown, ChevronUp } from "lucide-react"
 import { diseases } from "@/lib/Listdiseases"
 
 export default function DiseasesList() {
-  const [openLetters, setOpenLetters] = useState([])
+  const [openLetters, setOpenLetters] = useState<string[]>([])
 
-  const toggleLetter = (letter) => {
+  const toggleLetter = (letter: string) => {
     setOpenLetters((prev) => (prev.includes(letter) ? prev.filter((l) => l !== letter) : [...prev, letter]))
+  }
+
+  const getDiseasesCount = (diseaseList: Array<{ name: string; description: string }>, letter: string) => {
+    let count = diseaseList.filter(disease => !disease.name.includes("OBS")).length
+    
+    // Reduce count by 1 for letter P
+    if (letter === "P") {
+      count = count - 1
+    }
+    
+    return count
   }
 
   return (
@@ -20,7 +31,7 @@ export default function DiseasesList() {
           .filter(([_, list]) => list.length > 0)
           .map(([letter, diseaseList], index) => {
             const isOpen = openLetters.includes(letter)
-            const diseaseCount = diseaseList.length
+            const diseaseCount = getDiseasesCount(diseaseList, letter)
             const alignLeft = index % 2 === 0
 
             return (
@@ -106,7 +117,7 @@ export default function DiseasesList() {
           .filter(([_, list]) => list.length > 0)
           .map(([letter, diseaseList]) => {
             const isOpen = openLetters.includes(letter)
-            const diseaseCount = diseaseList.length
+            const diseaseCount = getDiseasesCount(diseaseList, letter)
 
             return (
               <div key={letter} className="overflow-hidden transition-all duration-300 flex flex-col">
