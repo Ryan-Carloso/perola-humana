@@ -13,11 +13,7 @@ export default function DiseasesList() {
 
   const getDiseasesCount = (diseaseList: Array<{ name: string; description: string }>, letter: string) => {
     let count = diseaseList.filter(disease => !disease.name.includes("OBS")).length
-    
-    // Reduce count by 1 for letter P
-    if (letter === "P") {
-      count = count - 1
-    }
+  
     
     return count
   }
