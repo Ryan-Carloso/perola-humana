@@ -1,20 +1,21 @@
 export default function SelfKnowledgeSection() {
   return (
-    <section id="autoconhecimento" className="py-16 relative">
+    <section 
+      id="autoconhecimento" 
+      className="py-16 relative"
+      style={{ 
+        backgroundImage: "url('/backgroundSelfKnow.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed' // Isso faz o efeito parallax para um visual melhor
+      }}
+    >
+      {/* Overlay para toda a seção para garantir legibilidade do texto */}
+      <div className="absolute inset-0 bg-black/80 z-0"></div>
+      
       {/* Hero section with quotes overlay on image */}
-      <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] mb-12 sm:mb-16 md:mb-24">
-        <div className="absolute inset-0 bg-black/70 z-10"></div>
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ 
-            backgroundImage: "url('/backgroundSelfKnow.jpg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: '100%',
-            width: '100%'
-          }}
-        ></div>
-        <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 h-full flex flex-col justify-center items-center relative z-20">
+      <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] mb-12 sm:mb-16 md:mb-24 z-10">
+        <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 h-full flex flex-col justify-center items-center relative">
           <h2 className="mb-8 sm:mb-12 md:mb-16 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-white">
             Autoconhecimento
           </h2>
@@ -39,7 +40,7 @@ export default function SelfKnowledgeSection() {
       </div>
 
       {/* Timeline-style content */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-amber-400 transform -translate-x-1/2"></div>
@@ -47,26 +48,26 @@ export default function SelfKnowledgeSection() {
           {/* Section 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 relative">
             <div className="md:text-right md:pr-20 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl font-bold mb-4 text-white">
                 <span className="inline-block border-b-2 border-amber-400 pb-2">QUEM SOU EU AFINAL?</span>
               </h3>
             </div>
             <div className="md:pl-20 relative">
               <div className="absolute left-0 top-0 md:-left-4 w-8 h-8 rounded-full bg-amber-400 transform md:translate-x-0 translate-x-1/2 -translate-y-1/2 z-10"></div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="text-gray-700 mb-4">
+              <div className="bg-black/60 p-6 rounded-lg shadow-md border border-gray-700">
+                <p className="text-gray-200 mb-4">
                   O teu corpo não é um corpo físico, mas sim uma massa de energia. O teu corpo é uma energia de baixa
                   frequência e manifesta-se como matéria. És feito de milhões de átomos e a energia são ondas electro
                   magnéticas. És energia e és feito de órgãos, os órgãos são feitos de tecidos, tecidos são feitos de
                   células, células são feitas de moléculas, moléculas são feitas de átomos.
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-200 mb-4">
                   Quando entenderes que não és um corpo físico, mas sim uma energia (alma) que faz parte do divino, que
                   o corpo é uma massa energética que vibra de acordo com a tua mente, que tens o poder de vibrar o que
                   quiseres e que automaticamente o teu corpo vibra na mesma sintonia, ai vais entender que só vives a
                   realidade que tu próprio "possuis dentro de ti".
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-200">
                   Toda a cura só começa quando encarares as tuas sombras e feridas com amor. Quando percebes que afinal
                   não és a tua dor, não és os teus problemas e dificuldades. Quebra todos os bloqueios energéticos e
                   muros que construíste para te proteger. Essa é uma versão forjada pelas feridas, dores, raiva,
@@ -82,22 +83,22 @@ export default function SelfKnowledgeSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 relative">
             <div className="md:pl-20 relative order-2 md:order-1">
               <div className="absolute right-0 top-0 md:-right-4 w-8 h-8 rounded-full bg-amber-400 transform md:translate-x-0 -translate-x-1/2 -translate-y-1/2 z-10"></div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="text-gray-700 mb-4">
+              <div className="bg-black/60 p-6 rounded-lg shadow-md border border-gray-700">
+                <p className="text-gray-200 mb-4">
                   O despertar de consciência não acontece de uma vez, nem de um momento para outro e vai muito além
                   desta vida, é um processo contínuo de sintonização com a tua essência e com planos mais elevados.
                   Quanto mais despertares, mais te apercebes que a realidade que te venderam é apenas um reflexo da
                   programação do sistema. O primeiro sinal do despertar, é questionar, questionar as estruturas
                   impostas, as crenças programadas e os padrões que te mantêm aprisionado.
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-200 mb-4">
                   Tudo o que aprendeste dentro da matrix foi desenhado para te manter a dormir, repetindo ciclos sem
                   consciência, mas quando conseguimos ver além do "veu", algo dentro de ti ativa a conexão com o teu
                   verdadeiro ser e subtilmente começa aquela sensação de vazio ou insatisfação, começas a perceber os
                   sinais, as "coincidências" (coincidências não existem), as sincronicidades, aquela intuição mais forte
                   que te guia para o que é certo e isso, é apenas o despertar de consciência.
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-200">
                   Imagina que tudo o que acreditavas até agora, era apenas uma pequena parte do que realmente existe. O
                   despertar de consciência (ou espiritual) é como abrir uma porta para um novo universo, e quando tu
                   atravessas essa porta, nada mais volta a ser como antes. Começas a questionar as histórias, os
@@ -111,7 +112,7 @@ export default function SelfKnowledgeSection() {
               </div>
             </div>
             <div className="md:text-right md:pr-20 flex flex-col justify-center order-1 md:order-2">
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl font-bold mb-4 text-white">
                 <span className="inline-block border-b-2 border-amber-400 pb-2">
                   DESPERTAR DE CONSCIÊNCIA É UM CAMINHO SEM VOLTA
                 </span>
@@ -122,25 +123,25 @@ export default function SelfKnowledgeSection() {
           {/* Section 3 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
             <div className="md:text-right md:pr-20 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl font-bold mb-4 text-white">
                 <span className="inline-block border-b-2 border-amber-400 pb-2">APOCALIPSE O QUE É AFINAL?</span>
               </h3>
             </div>
             <div className="md:pl-20 relative">
               <div className="absolute left-0 top-0 md:-left-4 w-8 h-8 rounded-full bg-amber-400 transform md:translate-x-0 translate-x-1/2 -translate-y-1/2 z-10"></div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="text-gray-700 mb-4">
+              <div className="bg-black/60 p-6 rounded-lg shadow-md border border-gray-700">
+                <p className="text-gray-200 mb-4">
                   Muitos estão a confundir o tão falado apocalipse bíblico, com o despertar planetário. Vamos falar de
                   uma forma breve sobre essa confusão e a verdadeira transição que nos chama a despertar de dentro para
                   fora.
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-200 mb-4">
                   A bíblia, um livro codificado e manipulado foi usado para prender a consciência humana em dogmas,
                   medos, numa matrix espiritual que mantém as pessoas presas na espera de um salvador, a sua narrativa
                   foi estruturada como uma programação preditiva, induzindo crenças limitantes que fazem as próprias
                   pessoas manifestarem eventos negativos através do inconsciente coletivo.
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-200">
                   Até o conhecimento do apelidado "Jesus" (nome criado pelo homem) foi distorcido pelo império Romano.
                   "Jesus" nunca pregou adoração cega ou intermediários, mas sim a expansão da consciência e o amor
                   incondicional. A tão falada "volta de Cristo", é apenas o despertar da consciência do ser humano, que
@@ -156,4 +157,3 @@ export default function SelfKnowledgeSection() {
     </section>
   )
 }
-
