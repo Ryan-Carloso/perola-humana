@@ -40,10 +40,10 @@ export default function WhatWeDoAlternating() {
                 e idosos).
               </p>
               <p className="leading-relaxed">
-                Amor, alegria, carinho, são gratuitos e é tão reconfortante saber se que podemos contribuir para mais
+                Amor, alegria, carinho, são gratuitos e é tão reconfortante saber que podemos contribuir para mais
                 sorrisos. Apadrinhar crianças o ano todo e não só em natais, poder doar um pouco do nosso tempo de
-                alguma forma, visitar, surpreender e dizer, "Eu gosto muito de ti, ou, Eu te amo muito" é a maior
-                riqueza que alguém "esquecido" ou carenciado pode ouvir, seja criança ou idoso.
+                alguma forma, visitar, surpreender e dizer, "Eu gosto muito de ti, ou, Eu amo-te muito" é a maior
+                riqueza que alguém "esquecido" pode ouvir, seja criança ou idoso.
               </p>
             </div>
           </div>

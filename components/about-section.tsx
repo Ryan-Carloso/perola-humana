@@ -73,10 +73,10 @@ export default function AboutSection() {
                 Esta realidade ainda persiste em muitos países, incluindo Portugal. Esta experiência fez Helena refletir sobre como poderia contribuir para um mundo melhor.
               </p>
               <p className="leading-relaxed">
-                Desde então, seu trabalho direcionou-se para crianças abandonadas, órfãos, idosos abandonados pelas próprias famílias e famílias carenciadas.
+                Desde então, O seu trabalho direcionou-se para crianças abandonadas, órfãos, idosos abandonados pelas próprias famílias e famílias carenciadas.
               </p>
               <p className="leading-relaxed font-medium">
-                Com muita determinação, nunca abandonou o sonho de ajudar quem mais precisa e hoje tem a feliz satisfação de poder colocar em prática o seu desejo.
+                Com muita determinação, nunca abandonou o sonho de ajudar quem mais precisa, e hoje tem a feliz satisfação de poder colocar em prática o seu desejo.
               </p>
               <div className="mt-4 bg-blue-50 p-3 rounded-md flex items-center">
                 <div className="w-2 h-12 bg-blue-400 mr-3"></div>
