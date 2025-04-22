@@ -14,7 +14,7 @@ export default function SelfKnowledgeSection() {
       <div className="absolute inset-0 bg-black/80 z-0"></div>
       
       {/* Hero section with quotes overlay on image */}
-      <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] mb-12 sm:mb-16 md:mb-24 z-10">
+      <div className="relative min-h-[10vh] mb-12 z-10">
         <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 h-full flex flex-col justify-center items-center relative">
           <h2 className="mb-8 sm:mb-12 md:mb-16 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-white">
             Autoconhecimento
@@ -80,7 +80,7 @@ export default function SelfKnowledgeSection() {
           </div>
 
           {/* Section 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-4 relative">
             <div className="md:pl-20 relative order-2 md:order-1">
               <div className="absolute right-0 top-0 md:-right-4 w-8 h-8 rounded-full bg-amber-400 transform md:translate-x-0 -translate-x-1/2 -translate-y-1/2 z-10"></div>
               <div className="bg-black/60 p-6 rounded-lg shadow-md border border-gray-700">
