@@ -8,16 +8,16 @@ export default function AboutSection() {
           <Watermark />
         </div>
       </div>
-      <div className="container mx-auto px-6 max-w-6xl relative z-[1]">
-        <h2 className="mb-12 text-gray-800 text-center text-4xl font-bold relative after:content-[''] after:block after:w-24 after:h-1 after:bg-white after:mx-auto after:mt-4">
+      <div className="container mx-auto max-w-6xl relative z-[1]">
+        <h2 className="text-gray-800 text-center text-4xl font-bold relative after:content-[''] after:block after:w-24 after:h-1 after:bg-white after:mx-auto after:mt-4">
           Sobre Nós
         </h2> 
 
         {/* Vertical line down the center */}
-        <div className="absolute left-1/2 top-[16rem] bottom-0 w-0.5 bg-amber-400 transform -translate-x-1/2 z-10 hidden md:block"></div>
+        <div className="absolute left-1/2 top-[5rem] bottom-0 w-0.5 bg-amber-400 transform -translate-x-1/2 z-10 hidden md:block"></div>
 
         {/* A Nossa História - Title on left, content on right */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-center justify-center md:justify-end pr-8">
             <div className="max-w-md">
               <div className="flex items-center justify-end mb-6">
