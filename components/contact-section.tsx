@@ -6,7 +6,7 @@ import { Watermark } from "./ui/watermark"
 import { useState } from "react"
 import { Mail } from "lucide-react"
 
-const RECIPIENT_EMAIL = 'formulario@perolahumana.org'
+const RECIPIENT_EMAIL = 'geral@perolahumana.org'
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -58,9 +58,7 @@ export default function ContactSection() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8 md:space-y-0">
             <div className="flex items-center space-x-2">
-              <Mail className="h-5 w-5 text-blue-600" />
-              <span>formulario@perolahumana.org</span>
-            </div>
+              <Mail className="h-5 w-5 text-blue-600" />            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
