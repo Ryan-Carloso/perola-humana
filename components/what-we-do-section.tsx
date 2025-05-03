@@ -1,6 +1,4 @@
 import { Heart, Users, Activity, Shield } from "lucide-react"
-import { Watermark } from "./ui/watermark"
-
 
 export default function WhatWeDoAlternating() {
   return (
@@ -16,13 +14,6 @@ export default function WhatWeDoAlternating() {
     >
       {/* Overlay escuro para melhorar a legibilidade */}
       <div className="absolute inset-0 bg-black/70 z-0"></div>
-
-      {/* Watermark */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-        <div className="w-full max-w-4xl h-full max-h-[40vh]">
-          <Watermark />
-        </div>
-      </div>
 
       {/* Conteúdo */}
       <div className="container mx-auto px-4 relative z-10">
