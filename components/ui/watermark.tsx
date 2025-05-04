@@ -7,7 +7,7 @@ interface WatermarkProps {
   opacity?: number
 }
 
-export const Watermark = ({ width = 1000, height = 1000, className = "", opacity = 1 }: WatermarkProps) => {
+export const Watermark = ({ width = 100, height = 100, className = "", opacity = 1 }: WatermarkProps) => {
   return (
     <div className="fixed inset-0 w-screen h-screen" style={{ opacity }}>
       <div className="relative w-full h-full opacity-20">

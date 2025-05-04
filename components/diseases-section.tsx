@@ -9,7 +9,7 @@ export default function DiseasesSection() {
   return (
     <section id="doencas" className="relative py-24 bg-gradient-to-b from-white to-gray-100">
   <div className="absolute inset-0 w-full h-full pointer-events-none flex items-center justify-center">
-  <div className="w-full max-w-4xl h-full max-h-[30vh]">
+  <div className="max-w-4xl max-h-[30vh]">
   <Watermark />
     </div>
   </div>
