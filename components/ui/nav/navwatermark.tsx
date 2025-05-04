@@ -5,7 +5,7 @@ interface WatermarkProps {
   height?: number;
 }
 
-export const Watermark = ({ width = 200, height = 200 }: WatermarkProps) => {
+export const Watermark = ({ width = 100, height = 100 }: WatermarkProps) => {
   return (
     <div>
       <Image
