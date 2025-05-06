@@ -148,6 +148,26 @@ export default function ContactSection() {
               </button>
             </div>
           </form>
+
+          {/* Informações de contato com design melhorado */}
+          <div className="mt-12 bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-gray-200/20 shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="p-4 rounded-lg hover:bg-white/5 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Contacto</h3>
+                <p className="text-gray-600">Entre em contacto conosco</p>
+              </div>
+              
+              <div className="p-4 rounded-lg hover:bg-white/5 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Localização</h3>
+                <p className="text-gray-600">Porto, Portugal</p>
+              </div>
+              
+              <div className="p-4 rounded-lg hover:bg-white/5 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Telefone</h3>
+                <p className="text-gray-600">+351 22 111 7865</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
