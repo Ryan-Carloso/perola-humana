@@ -21,8 +21,8 @@ export default function Navbar() {
       <Image
         src="/perolahumana.png"
         alt="Watermark"
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         className="mb-4"
       />
   <Watermark />
