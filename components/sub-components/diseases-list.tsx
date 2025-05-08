@@ -85,24 +85,6 @@ export default function DiseasesList() {
                     </ul>
                   </div>
                 </div>
-
-                <div
-                  className={`
-                    transition-opacity duration-300 ease-in-out flex-1
-                    ${isOpen ? "opacity-100" : "opacity-0 hidden"}
-                  `}
-                >
-                  <div className="bg-white p-6 mt-2 rounded-lg shadow-lg border border-yellow-100 h-full">
-                    <ul className="space-y-6 divide-y divide-yellow-100">
-                      {diseaseList.map((disease, idx) => (
-                        <li key={idx} className={`${idx > 0 ? "pt-6" : ""} text-gray-700`}>
-                          <h4 className="font-semibold text-xl text-yellow-700 mb-2">{disease.name}</h4>
-                          <p className="text-gray-600 leading-relaxed">{disease.description}</p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
               </div>
             )
           })}
