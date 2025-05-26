@@ -43,7 +43,7 @@ export default function SelfKnowledgeSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-amber-400 transform -translate-x-1/2"></div>
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-amber-400 transform -translate-x-1/2 hidden md:block"></div>
 
           {/* Section 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 relative">
