@@ -64,7 +64,6 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white">
         <div className="max-w-3xl">
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">Pérola Humana</h1>
           <p className="mb-8 text-xl md:text-2xl">
             "O mundo seria melhor se todos entendessem isto:
             <br />
