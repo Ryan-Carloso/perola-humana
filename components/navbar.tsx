@@ -58,6 +58,9 @@ export default function Navbar() {
           <Link href="/contacto" className="text-gray-700 hover:text-blue-600">
             Contacto
           </Link>
+          <Link href="/eventos" className="text-gray-700 hover:text-blue-600">
+            Eventos
+          </Link>
         </nav>
       </div>
 
@@ -85,6 +88,9 @@ export default function Navbar() {
             </Link>
             <Link href="/contacto" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
               Contacto
+            </Link>
+            <Link href="/eventos" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
+              Eventos
             </Link>
           </nav>
         </div>

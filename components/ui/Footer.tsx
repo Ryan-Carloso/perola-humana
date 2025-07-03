@@ -34,6 +34,7 @@ export default function Footer() {
           <Link href="/tecnologia" className="hover:text-blue-600">Saúde</Link>
           <Link href="/autoconhecimento" className="hover:text-blue-600">Auto</Link>
           <Link href="/contacto" className="hover:text-blue-600">Contacto</Link>
+          <Link href="/eventos" className="hover:text-blue-600">Eventos</Link>
         </div>
 
         {/* Direita: Contactos */}
