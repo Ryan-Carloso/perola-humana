@@ -2,13 +2,15 @@
 
 import { useEffect, useRef, useState } from "react"
 import Navbar from "@/components/navbar"
-
+import messagesData from "@/data/messages.json"
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
   const [showAudioPrompt, setShowAudioPrompt] = useState(true)
   const [audioEnabled, setAudioEnabled] = useState(false)
+  const [currentMessageIndex, setCurrentMessageIndex] = useState(0)
+  const [fade, setFade] = useState(false)
 
   useEffect(() => {
     // Auto-play video when component mounts (video will still be muted)
@@ -20,6 +22,19 @@ export default function HeroSection() {
     
     // Always show audio prompt when page loads
     setShowAudioPrompt(true)
+
+    // Set up the message rotation
+    const interval = setInterval(() => {
+      setFade(true)
+      setTimeout(() => {
+        setCurrentMessageIndex((prevIndex) => 
+          prevIndex === messagesData.messages.length - 1 ? 0 : prevIndex + 1
+        )
+        setFade(false)
+      }, 500) // Half second for fade out
+    }, 5000) // Change message every 5 seconds
+
+    return () => clearInterval(interval)
   }, [])
 
   // Function to handle enabling audio
@@ -42,7 +57,6 @@ export default function HeroSection() {
   }
 
   return (
-    
     <section id="inicio" className="relative h-screen w-full overflow-hidden">
       <Navbar />
       {/* Video background */}
@@ -64,12 +78,12 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white">
         <div className="max-w-3xl">
-          <p className="mb-8 text-xl md:text-2xl">
-            "O mundo seria melhor se todos entendessem isto:
-            <br />
-            Se puder ajudar os outros ajude, se não puder, ao menos não lhes faça mal"
-          </p>
-          <p className="text-lg italic">- Dalai Lama</p>
+          <div className={`transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+            <p className="mb-2 text-xl md:text-2xl">
+              "{messagesData.messages[currentMessageIndex].text}"
+            </p>
+            <p className="text-lg italic">— {messagesData.messages[currentMessageIndex].author}</p>
+          </div>
         </div>
       </div>
 
@@ -101,4 +115,3 @@ export default function HeroSection() {
     </section>
   )
 }
-
