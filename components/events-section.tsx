@@ -5,35 +5,21 @@ import Image from "next/image"
 
 const eventosFuturos = [
   {
-    titulo: "Campanha Solidária de Alimentação",
-    data: "15 de Julho de 2025",
-    local: "Centro Comunitário de Guimarães",
-    descricao: "Distribuição de cabazes alimentares a famílias carenciadas da região.",
-    imagem: "/eventos/campanha-alimentar.jpg",
-  },
-  {
-    titulo: "Palestra: Saúde Mental nas Comunidades",
-    data: "28 de Julho de 2025",
-    local: "Associação Pérola Humana - Porto",
-    descricao: "Sessão de sensibilização com psicólogos convidados sobre autocuidado e apoio mútuo.",
-    imagem: "/eventos/palestra-saude-mental.jpg",
+    titulo: "Em breve",
+    data: "-",
+    local: "-",
+    descricao: "-",
+    imagem: "/eventos/arraial-solidario.jpg",
   },
 ]
 
 const eventosPassados = [
   {
-    titulo: "Arraial Solidário",
-    data: "21 de Junho de 2025",
-    local: "Jardim da Alameda, Porto",
-    descricao: "Festa de angariação de fundos com música, comida típica e atividades para famílias.",
+    titulo: "Em breve",
+    data: "-",
+    local: "-",
+    descricao: "-",
     imagem: "/eventos/arraial-solidario.jpg",
-  },
-  {
-    titulo: "Oficina de Empoderamento Feminino",
-    data: "5 de Junho de 2025",
-    local: "Guimarães",
-    descricao: "Workshop com partilhas, dinâmicas e apoio psicológico.",
-    imagem: "/eventos/oficina-empoderamento.jpg",
   },
 ]
 
