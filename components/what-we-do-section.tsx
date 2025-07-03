@@ -41,52 +41,23 @@ export default function WhatWeDoAlternating() {
           <div className="pl-8 rounded-xl p-2">
             <div className="max-w-s space-y-4 text-white">
               <p className="leading-relaxed">
-                O nosso objetivo é despertar a consciência humana a todos os níveis. Sensibilizar e apelar para a
-                atenção dos mais "INCONSCIENTES" e acima de tudo, doar amor e dedicação aos mais necessitados. (Crianças
-                e idosos).
+              O nosso objetivo é despertar a consciência humana em todas as suas dimensões- emocional,
+mental, espiritual e social. Procuramos sensibilizar e apelar a atenção dos mais
+“inconscientes”, e, acima de tudo, oferecer amor, dedicação e presença aos que mais
+necessitam, com especial atenção a crianças e idosos em situação de vulnerabilidade.
               </p>
               <p className="leading-relaxed">
-                Amor, alegria, carinho, são gratuitos e é tão reconfortante saber que podemos contribuir para mais
-                sorrisos. Apadrinhar crianças o ano todo e não só em natais, poder doar um pouco do nosso tempo de
-                alguma forma, visitar, surpreender e dizer, "Eu gosto muito de ti, ou, Eu amo-te muito" é a maior
-                riqueza que alguém "esquecido" pode ouvir, seja criança ou idoso.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* DNA consulta - Título à direita, texto à esquerda */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="order-2 md:order-1 pl-8 rounded-xl p-8">
-            <div className="max-w-md space-y-4 text-white">
-              <p className="leading-relaxed">
-                Visa analisar todos os registos contidos no ADN energético, como:
-              </p>
-              <ul className="list-disc pl-5 space-y-2 mb-4">
-                <li>Memórias de vidas passadas</li>
-                <li>Heranças genéticas e de antepassados</li>
-                <li>Origens de fobias, traumas etc.</li>
-              </ul>
-              <p className="leading-relaxed">
-                Todas estas memórias originam personalidades inconscientes e/ou impercetíveis no ser humano originando bloqueios, padrões, dores e perdas.
+              Acreditamos que gestos simples, como o amor, a alegria e o carinho, não têm custo, mas têm
+um valor incalculável. É profundamente reconfortante saber que cada um de nós pode
+contribuir para mais sorrisos, mais esperança e mais humanidade.
               </p>
               <p className="leading-relaxed">
-                Com esta análise, torna-se mais fácil saber qual o caminho a seguir, a forma de cura. Tomando consciência, há uma aceitação, aceitando, a cura acontece.
+              Apadrinhar crianças durante todo o ano (e não apenas na época do Natal), oferecer um pouco
+do nosso tempo, realizar uma visita, surpreender com uma palavra amiga e dizer: “Gosto
+muito de ti” ou “Amo-te”, são atos de generosidade que para quem se sente “esquecido”
+representam verdadeiros tesouros. Seja uma criança ou um idoso, este tipo de atenção pode
+mudar uma vida.
               </p>
-              <p className="leading-relaxed">
-                Apenas a tomada de consciência/mudança interna pode realizar os tais "milagres". E estes milagres não são de ordem religiosa, são apenas a mudança da nossa consciência que atua para uma nova realidade.
-              </p>
-            </div>
-          </div>
-
-          <div className="order-1 md:order-2 flex items-center justify-center md:justify-start pr-8">
-            <div className="max-w-md">
-              <div className="flex items-center justify-start mb-6">
-                <div className="rounded-full bg-amber-400/15 p-4">
-                  <Users className="h-7 w-7 text-amber-400" />
-                </div>
-                <h3 className="text-2xl font-semibold text-white ml-4">CONSULTA DE ADN</h3>
-              </div>
             </div>
           </div>
         </div>
