@@ -12,30 +12,13 @@ export default function Footer() {
 
         {/* Esquerda: Logo + Info */}
         <div className="flex items-center space-x-3">
-          <Image
-            src="/perolahumana.png"
-            alt="Logo Pérola Humana"
-            width={40}
-            height={40}
-          />
           <div className="leading-tight">
-            <p className="font-semibold">Pérola Humana</p>
+            <p className="font-semibold">PEROLA HUMANA ASSOCIAÇÃO HUMANITARIA</p>
             <p>Guimarães e Porto</p>
             <p>NIF: 518 731 278</p>
           </div>
         </div>
 
-        {/* Centro: Navegação */}
-        <div className="flex flex-wrap justify-center gap-4 text-sm">
-          <Link href="/" className="hover:text-blue-600">Início</Link>
-          <Link href="/sobre" className="hover:text-blue-600">Sobre</Link>
-          <Link href="/fazemos" className="hover:text-blue-600">Fazemos</Link>
-          <Link href="/doencas" className="hover:text-blue-600">Doenças</Link>
-          <Link href="/tecnologia" className="hover:text-blue-600">Saúde</Link>
-          <Link href="/autoconhecimento" className="hover:text-blue-600">Auto</Link>
-          <Link href="/contacto" className="hover:text-blue-600">Contacto</Link>
-          <Link href="/eventos" className="hover:text-blue-600">Eventos</Link>
-        </div>
 
         {/* Direita: Contactos */}
         <div className="text-right space-y-1">
