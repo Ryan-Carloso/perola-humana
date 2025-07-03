@@ -59,7 +59,7 @@ export default function Navbar() {
             Contacto
           </Link>
           <Link href="/eventos" className="text-gray-700 hover:text-blue-600">
-            Eventos
+            Ações
           </Link>
         </nav>
       </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
               Contacto
             </Link>
             <Link href="/eventos" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
-              Eventos
+              Ações
             </Link>
           </nav>
         </div>
