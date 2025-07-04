@@ -39,17 +39,12 @@ export default function AboutSection() {
           <div className="pl-8">
             <div className="max-w-md space-y-4 text-gray-700 p-6">
               <p className="leading-relaxed">
-                Helena da Fonseca tem dedicado a sua vida à defesa dos mais
-                vulneráveis. Desde 2007, o seu percurso tem sido marcado por
-                ações concretas de solidariedade e por uma vocação de serviço à
-                humanidade.
+              Helena da Fonseca tem dedicado a sua vida à defesa dos mais vulneráveis. Desde 2007, o seu percurso tem sido marcado por ações concretas de solidariedade e por uma vocação de serviço à humanidade.
+
               </p>
               <p className="leading-relaxed">
-                Determinada em aprofundar o seu compromisso, fundou, em 2007, a
-                Escola de Ascensão onde passou a ministrar palestras, cursos e
-                consultas de análise de ADN com o objetivo de promover o
-                autoconhecimento e o desenvolvimento pessoal. A sua atuação
-                estendeu-se em diversos países e regiões:
+              Determinada em aprofundar o seu compromisso, fundou, em 2007, a Escola de Ascensão onde passou a ministrar palestras, cursos e consultas de análise de ADN com o objetivo de promover o autoconhecimento e o desenvolvimento pessoal. A sua atuação estendeu-se em diversos países e regiões:
+
               </p>
 
               {/* Países */}
@@ -87,24 +82,21 @@ export default function AboutSection() {
               {/* Citação */}
               <div>
                 <p className="text-gray-700">
-                  “Crianças que viviam em condições extremamente vulneráveis:
-                  mães a praticar prostituição dentro de casa, pais
-                  toxicodependentes ou presos por crimes graves e adolescentes
-                  grávidas com apenas 13 anos.”
+                Entre as muitas experiências vividas, Helena recorda com particular intensidade o impacto de uma visita a uma escola no Rio Grande do Sul, no Brasil, onde se deparou com uma realidade profundamente comovente:
+
                 </p>
               </div>
 
               <p className="leading-relaxed">
-                Infelizmente, realidades semelhantes continuam a existir em
-                muitos países, incluindo Portugal. Desde então, Helena orientou
-                o seu trabalho para crianças abandonadas, órfãs, idosos
-                negligenciados pelas suas próprias famílias e famílias
-                carenciadas.
+              “Crianças que viviam em condições extremamente vulneráveis: mães a praticar prostituição dentro de casa, pais toxicodependentes ou presos por crimes graves e adolescentes grávidas com apenas 13 anos."
+
               </p>
               <p className="leading-relaxed">
-                Com uma determinação firme, nunca abandonou o sonho de ajudar
-                quem mais precisa. Hoje, sente a realização de poder colocar em
-                prática essa missão.
+              Infelizmente, realidades semelhantes continuam a existir em muitos países, incluindo Portugal. Desde então, Helena orientou o seu trabalho para crianças abandonadas, órfãs, idosos negligenciados pelas suas próprias famílias e famílias carenciadas
+              </p>
+
+              <p className="leading-relaxed">
+              Com uma determinação firme, nunca abandonou o sonho de ajudar quem mais precisa. Hoje, sente a realização de poder colocar em prática essa missão.
               </p>
 
               {/* Destaque */}
