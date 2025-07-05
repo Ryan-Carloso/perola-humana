@@ -32,7 +32,7 @@ export default function HeroSection() {
         )
         setFade(false)
       }, 500) // Half second for fade out
-    }, 20000) // Change message every 20 seconds
+    }, 10000) // Change message every 10 seconds
 
     return () => clearInterval(interval)
   }, [])

@@ -46,6 +46,9 @@ export default function Navbar() {
           <Link href="/fazemos" className="text-gray-700 hover:text-blue-600">
             O que Fazemos
           </Link>
+          <Link href="/eventos" className="text-gray-700 hover:text-blue-600">
+            Ações
+          </Link>
           <Link href="/doencas" className="text-gray-700 hover:text-blue-600">
             Doenças
           </Link>
@@ -58,9 +61,7 @@ export default function Navbar() {
           <Link href="/contacto" className="text-gray-700 hover:text-blue-600">
             Contacto
           </Link>
-          <Link href="/eventos" className="text-gray-700 hover:text-blue-600">
-            Ações
-          </Link>
+
         </nav>
       </div>
 
@@ -77,6 +78,9 @@ export default function Navbar() {
             <Link href="/fazemos" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
               O que Fazemos
             </Link>
+            <Link href="/eventos" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
+              Ações
+            </Link>
             <Link href="/doencas" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
               Doenças
             </Link>
@@ -88,9 +92,6 @@ export default function Navbar() {
             </Link>
             <Link href="/contacto" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
               Contacto
-            </Link>
-            <Link href="/eventos" className="text-gray-700 hover:text-blue-600" onClick={toggleMenu}>
-              Ações
             </Link>
           </nav>
         </div>
