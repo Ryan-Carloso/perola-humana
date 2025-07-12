@@ -1,3 +1,5 @@
+import AudioPlayer from "./audioplayer";
+
 export default function IntroductionSection() {
     return (
       <div className="mb-8 max-w-4xl mx-auto">
@@ -46,6 +48,8 @@ export default function IntroductionSection() {
             </ul>
             <p className="text-center mt-4 font-bold text-green-700">CONSUMIR COM FREQUENCIA!</p>
           </div>
+          <p>ou ouça o audio</p>
+          <AudioPlayer src="/audio.mp3" />
   
           <h3 className="text-xl font-bold mb-2">INTRODUÇÃO À SAÚDE</h3>
   
