@@ -58,6 +58,9 @@ muito de ti” ou “Amo-te”, são atos de generosidade que para quem se sente
 representam verdadeiros tesouros. Seja uma criança ou um idoso, este tipo de atenção pode
 mudar uma vida.
               </p>
+              <p className="leading-relaxed"  >
+                Gostaríamos de ajudar para a mudança de pensamentos, sentimentos, unir mãos e corações  para tornar um Portugal melhor.
+              </p>
             </div>
           </div>
         </div>
