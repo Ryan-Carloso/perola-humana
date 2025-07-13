@@ -49,7 +49,7 @@ export default function IntroductionSection() {
             <p className="text-center mt-4 font-bold text-green-700">CONSUMIR COM FREQUENCIA!</p>
           </div>
           <p>ou ouça o audio</p>
-          <AudioPlayer src="/audio.mp3" />
+          <AudioPlayer src="/audio/audio.mp3" />
   
           <h3 className="text-xl font-bold mb-2">INTRODUÇÃO À SAÚDE</h3>
   

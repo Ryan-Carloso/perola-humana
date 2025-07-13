@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Play, Pause } from 'lucide-react';
+import clsx from 'clsx';
 
 export default function AudioPlayer({ src }: { src: string }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -16,12 +17,23 @@ export default function AudioPlayer({ src }: { src: string }) {
     const updateTime = () => setCurrentTime(audio.currentTime);
     const setAudioData = () => setDuration(audio.duration);
 
+    const handleCanPlayThrough = async () => {
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch (err) {
+        console.warn('Autoplay bloqueado:', err);
+      }
+    };
+
     audio.addEventListener('loadedmetadata', setAudioData);
     audio.addEventListener('timeupdate', updateTime);
+    audio.addEventListener('canplaythrough', handleCanPlayThrough, { once: true });
 
     return () => {
       audio.removeEventListener('loadedmetadata', setAudioData);
       audio.removeEventListener('timeupdate', updateTime);
+      audio.removeEventListener('canplaythrough', handleCanPlayThrough);
     };
   }, []);
 
@@ -51,26 +63,33 @@ export default function AudioPlayer({ src }: { src: string }) {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white shadow-lg rounded-2xl p-4 flex flex-col gap-3">
-      <audio ref={audioRef} src={src} preload="metadata" />
-      <div className="flex items-center justify-between">
+    <div className="w-full max-w-lg mx-auto bg-white/70 backdrop-blur-md shadow-xl rounded-3xl px-6 py-5 flex flex-col gap-4">
+      <audio ref={audioRef} src={src} preload="auto" />
+
+      {/* Time + Play */}
+      <div className="flex items-center justify-between w-full">
+        {/* Play/Pause */}
         <button
           onClick={togglePlay}
-          className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full"
+          className="w-12 h-12 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition"
         >
-          {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+          {isPlaying ? <Pause className="w-6 h-6 text-gray-700" /> : <Play className="w-6 h-6 text-gray-700" />}
         </button>
-        <div className="text-sm text-gray-600">
+
+        {/* Timer */}
+        <div className="text-sm text-gray-600 font-medium ml-auto">
           {formatTime(currentTime)} / {formatTime(duration)}
         </div>
       </div>
+
+      {/* Progress bar */}
       <input
         type="range"
         min={0}
         max={duration}
         value={currentTime}
         onChange={handleProgress}
-        className="w-full accent-blue-500"
+        className="w-full h-2 rounded-full bg-gray-300 accent-blue-500"
       />
     </div>
   );
