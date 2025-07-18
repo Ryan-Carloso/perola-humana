@@ -103,7 +103,7 @@ export default function AboutSection() {
               <div className="mt-4 bg-blue-50 p-3 rounded-md flex items-center">
                 <div className="w-2 h-12 bg-blue-400 mr-3"></div>
                 <p className="text-gray-800">
-                  Além de diplomata civil, Helena da Fonseca colabora em 250
+                  Além de diplomata civil, Helena da Fonseca comparticipante em 250
                   projetos humanitários a nível internacional.
                 </p>
               </div>
