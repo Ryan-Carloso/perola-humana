@@ -26,7 +26,7 @@ export default function Footer() {
             <Phone className="mr-1" size={16} /> 221 117 865 / 93 906 9379
           </p>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/perola.humana?igsh=MWk4NXJoZGllczU3MQ%3D%3D&utm_source=site"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-end hover:text-white transition-colors"
